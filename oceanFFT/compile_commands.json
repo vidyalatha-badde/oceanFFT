@@ -1,0 +1,16 @@
+[
+    {
+        "command": "nvcc -c -I../../../Common -m64 --std=c++11 -o oceanFFT.o -D__CUDACC__=1 oceanFFT.cpp",
+        "directory": "/home/tcs2/vidya/cuda-samples/Samples/4_CUDA_Libraries/oceanFFT",
+        "file": "/home/tcs2/vidya/cuda-samples/Samples/4_CUDA_Libraries/oceanFFT/oceanFFT.cpp"
+    },
+    {
+        "command": "nvcc -c -I../../../Common -m64 --std=c++11 -o oceanFFT_kernel.o -D__CUDACC__=1 oceanFFT_kernel.cu",
+        "directory": "/home/tcs2/vidya/cuda-samples/Samples/4_CUDA_Libraries/oceanFFT",
+        "file": "/home/tcs2/vidya/cuda-samples/Samples/4_CUDA_Libraries/oceanFFT/oceanFFT_kernel.cu"
+    },
+    {
+        "command": "nvcc -m64 -o oceanFFT oceanFFT.o oceanFFT_kernel.o -D__CUDACC__=1",
+        "directory": "/home/tcs2/vidya/cuda-samples/Samples/4_CUDA_Libraries/oceanFFT"
+    }
+]
